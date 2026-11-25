@@ -1,0 +1,20 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; }
+body { background: #0E1B2C; color: #E8EEF5; font-family: "Segoe UI", system-ui, sans-serif; position: relative;
+  background-image: linear-gradient(#22344C 1px, transparent 1px), linear-gradient(90deg, #22344C 1px, transparent 1px);
+  background-size: 60px 60px; }
+.fade { position: absolute; inset: 0; background: radial-gradient(700px 420px at 90% 0%, rgba(45,212,191,.16), transparent 65%), linear-gradient(90deg, #0E1B2C 35%, rgba(14,27,44,.75)); }
+.box { position: absolute; left: 80px; top: 80px; right: 80px; bottom: 80px; display: flex; flex-direction: column; }
+.brand { display: flex; align-items: center; gap: 20px; font-size: 40px; font-weight: 700; letter-spacing: .06em; }
+.brand svg { width: 76px; height: 76px; }
+h1 { font-size: 76px; line-height: 1.05; margin: auto 0 22px; font-weight: 700; letter-spacing: -.01em; }
+.sub { font-size: 30px; color: #9FB3C8; margin: 0 0 30px; }
+.area { display: inline-block; font-size: 24px; color: #04342C; background: #2DD4BF; border-radius: 8px; padding: 8px 18px; font-weight: 600; align-self: flex-start; }
+</style></head>
+<body><div class="fade"></div><div class="box">
+<div class="brand">{{logo}} MMRTB</div>
+<h1>{{title}}</h1>
+<p class="sub">{{sub}}</p>
+<span class="area">{{area}}</span>
+</div></body></html>

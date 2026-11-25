@@ -1,0 +1,121 @@
+{
+  "_readme": "Settings shared by every page. Edit here, then run build.ps1. Leave a value empty (\"\") to hide it from the site.",
+  "baseUrl": "https://mmrtb.ca",
+  "name": "MMRTB",
+  "email": "info@mmrtb.ca",
+  "phone": "",
+  "bookingUrl": "https://calendly.com/dwayne-mmrtb/30min",
+  "linkedin": "",
+  "foundingYear": "",
+  "defaultLocale": "fr",
+  "areas": ["Lanaudière", "Terrebonne", "Mascouche", "Repentigny", "L'Assomption", "Joliette", "Laval", "Blainville", "Saint-Jérôme", "Montréal"],
+
+  "locales": {
+    "fr": {
+      "htmlLang": "fr-CA",
+      "ogLocale": "fr_CA",
+      "prefix": "",
+      "tagline": "Consultation informatique",
+      "skip": "Aller au contenu",
+      "menu": "Menu",
+      "nav": [
+        { "label": "Services", "url": "/services/" },
+        { "label": "À propos", "url": "/a-propos/" },
+        { "label": "Contact", "url": "/contact/" }
+      ],
+      "home": "Accueil",
+      "servicesLabel": "Services",
+      "servicesUrl": "/services/",
+      "switchLabel": "EN",
+      "switchTitle": "English version",
+      "cta": "Planifier un appel",
+      "ctaBandTitle": "Parlons de votre projet",
+      "ctaBandText": "Un appel exploratoire de 30 minutes, sans engagement, pour faire le point sur votre infrastructure et vos priorités.",
+      "ctaBandAlt": "Écrire à",
+      "learnMore": "En savoir plus",
+      "footerAreas": "Région desservie",
+      "footerAreasText": "Lanaudière, Laval, Rive-Nord et Grand Montréal — sur place ou à distance.",
+      "footerContact": "Contact",
+      "footerServices": "Services",
+      "rights": "Tous droits réservés.",
+      "notFoundTitle": "Page introuvable"
+    },
+    "en": {
+      "htmlLang": "en-CA",
+      "ogLocale": "en_CA",
+      "prefix": "/en",
+      "tagline": "IT consulting",
+      "skip": "Skip to content",
+      "menu": "Menu",
+      "nav": [
+        { "label": "Services", "url": "/en/services/" },
+        { "label": "About", "url": "/en/about/" },
+        { "label": "Contact", "url": "/en/contact/" }
+      ],
+      "home": "Home",
+      "servicesLabel": "Services",
+      "servicesUrl": "/en/services/",
+      "switchLabel": "FR",
+      "switchTitle": "Version française",
+      "cta": "Book a call",
+      "ctaBandTitle": "Let's talk about your project",
+      "ctaBandText": "A free 30-minute discovery call to review your infrastructure and your priorities. No commitment.",
+      "ctaBandAlt": "Email",
+      "learnMore": "Learn more",
+      "footerAreas": "Service area",
+      "footerAreasText": "Lanaudière, Laval, the North Shore and Greater Montréal — on site or remote.",
+      "footerContact": "Contact",
+      "footerServices": "Services",
+      "rights": "All rights reserved.",
+      "notFoundTitle": "Page not found"
+    }
+  },
+
+  "services": [
+    {
+      "icon": "server",
+      "fr": { "url": "/services/migration-proxmox/", "title": "Migration Proxmox", "blurb": "Revendeur autorisé. Sortez de VMware ou de Hyper-V sans perdre vos serveurs ni votre fin de semaine." },
+      "en": { "url": "/en/services/proxmox-migration/", "title": "Proxmox migration", "blurb": "Authorized reseller. Move off VMware or Hyper-V without losing your servers or your weekend." }
+    },
+    {
+      "icon": "lifebuoy",
+      "fr": { "url": "/services/infogerance/", "title": "Infogérance et soutien TI", "blurb": "Postes, serveurs, sauvegardes et mises à jour gérés pour vous, au quotidien." },
+      "en": { "url": "/en/services/managed-it/", "title": "Managed IT and support", "blurb": "Workstations, servers, backups and updates looked after for you, day to day." }
+    },
+    {
+      "icon": "cloud",
+      "fr": { "url": "/services/infonuagique/", "title": "Infonuagique Azure et AWS", "blurb": "Microsoft 365, Azure et AWS configurés correctement, avec des coûts maîtrisés." },
+      "en": { "url": "/en/services/cloud/", "title": "Azure and AWS cloud", "blurb": "Microsoft 365, Azure and AWS set up properly, with costs under control." }
+    },
+    {
+      "icon": "network",
+      "fr": { "url": "/services/reseautique/", "title": "Réseautique", "blurb": "Pare-feu Fortinet et WatchGuard, commutateurs Cisco, Wi-Fi et VPN fiables." },
+      "en": { "url": "/en/services/networking/", "title": "Networking", "blurb": "Fortinet and WatchGuard firewalls, Cisco switching, reliable Wi-Fi and VPN." }
+    },
+    {
+      "icon": "shield",
+      "fr": { "url": "/services/cybersecurite/", "title": "Cybersécurité", "blurb": "Réduire le risque de rançongiciel avec des mesures concrètes et adaptées à une PME." },
+      "en": { "url": "/en/services/cybersecurity/", "title": "Cybersecurity", "blurb": "Practical, right-sized measures that cut your ransomware risk." }
+    },
+    {
+      "icon": "search",
+      "fr": { "url": "/services/audit-infrastructure/", "title": "Audit d'infrastructure", "blurb": "Un portrait clair de votre parc TI, de ses risques et des priorités à financer." },
+      "en": { "url": "/en/services/infrastructure-audit/", "title": "Infrastructure audit", "blurb": "A clear picture of your IT, its risks and which fixes to fund first." }
+    },
+    {
+      "icon": "recycle",
+      "fr": { "url": "/services/recyclage-informatique/", "title": "Recyclage informatique", "blurb": "Retrait de l'équipement désuet avec effacement sécurisé des données." },
+      "en": { "url": "/en/services/it-recycling/", "title": "IT recycling", "blurb": "Retire old equipment with secure data wiping." }
+    }
+  ],
+
+  "icons": {
+    "server": "<rect x='3' y='4' width='18' height='7' rx='2'/><rect x='3' y='13' width='18' height='7' rx='2'/><path d='M7 7.5h.01M7 16.5h.01'/>",
+    "lifebuoy": "<circle cx='12' cy='12' r='9'/><circle cx='12' cy='12' r='4'/><path d='M15 15l3.35 3.35M9 15l-3.35 3.35M5.65 5.65L9 9M18.35 5.65L15 9'/>",
+    "cloud": "<path d='M7 18a4.6 4.4 0 0 1 0-9 5 4.5 0 0 1 11 2h1a3.5 3.5 0 0 1 0 7z'/>",
+    "network": "<rect x='9' y='2' width='6' height='5' rx='1'/><rect x='2' y='17' width='6' height='5' rx='1'/><rect x='16' y='17' width='6' height='5' rx='1'/><path d='M12 7v5M5 17v-2a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v2M12 12v2'/>",
+    "shield": "<path d='M12 3a12 12 0 0 0 8.5 3A12 12 0 0 1 12 21 12 12 0 0 1 3.5 6 12 12 0 0 0 12 3'/><path d='M9 12l2 2 4-4'/>",
+    "search": "<circle cx='10' cy='10' r='7'/><path d='M21 21l-6-6'/>",
+    "recycle": "<path d='M12 17l-2 2 2 2M10 19h9a2 2 0 0 0 1.75-2.75l-.55-1M8.53 6.5l-.72-2.78-2.78.72M7.8 3.72L3.3 11.52a2 2 0 0 0 1.64 2.98h1.06M15.47 13.5l2.6-1.5-1.5-2.6M18.07 12L13.57 4.2a2 2 0 0 0-3.4-.22l-.6 1'/>"
+  }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="{{htmlLang}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{title}}</title>
+<meta name="description" content="{{description}}">
+<link rel="canonical" href="{{canonical}}">
+{{hreflang}}
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{siteName}}">
+<meta property="og:locale" content="{{ogLocale}}">
+<meta property="og:title" content="{{title}}">
+<meta property="og:description" content="{{description}}">
+<meta property="og:url" content="{{canonical}}">
+<meta property="og:image" content="{{baseUrl}}/assets/og-{{lang}}.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0E1B2C">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css?v={{version}}">
+<script type="application/ld+json">{{jsonld}}</script>
+</head>
+<body>
+<a class="skip" href="#main">{{skip}}</a>
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="{{homeUrl}}" aria-label="{{siteName}} — {{home}}">
+      <img src="/favicon.svg" alt="" width="32" height="32">
+      <span><strong>{{siteName}}</strong><small>{{tagline}}</small></span>
+    </a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">{{menu}}</button>
+    <nav id="site-nav" class="site-nav" aria-label="{{menu}}">
+      {{nav}}
+      <a class="lang" href="{{altUrl}}" hreflang="{{altLang}}" lang="{{altLang}}" title="{{switchTitle}}">{{switchLabel}}</a>
+      <a class="btn btn-primary btn-sm" href="{{bookingUrl}}" rel="noopener">{{cta}}</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+{{breadcrumb}}
+{{content}}
+{{ctaBand}}
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <p class="footer-brand"><img src="/favicon.svg" alt="" width="28" height="28"> {{siteName}}</p>
+      <p class="muted">{{tagline}}</p>
+    </div>
+    <div>
+      <h2>{{footerServices}}</h2>
+      <ul>{{footerServiceLinks}}</ul>
+    </div>
+    <div>
+      <h2>{{footerAreas}}</h2>
+      <p class="muted">{{footerAreasText}}</p>
+    </div>
+    <div>
+      <h2>{{footerContact}}</h2>
+      <ul>{{footerContactLinks}}</ul>
+    </div>
+  </div>
+  <div class="wrap footer-base"><p>© {{year}} {{siteName}}. {{rights}}</p></div>
+</footer>
+<script>
+document.querySelector('.menu-btn').addEventListener('click', function () {
+  var open = this.getAttribute('aria-expanded') === 'true';
+  this.setAttribute('aria-expanded', String(!open));
+  document.body.classList.toggle('nav-open', !open);
+});
+</script>
+</body>
+</html>
